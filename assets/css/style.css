@@ -5,8 +5,8 @@
   --border:#242c3a;
   --text:#e8e9ee;
   --subtle:#aab3c2;
-  --gold:#0719c1; /* dorado sobrio */
-  --gold-2:#2534be;
+  --gold:#c5a15a; /* dorado sobrio */
+  --gold-2:#9d8147;
   --shadow: 0 10px 30px rgba(0,0,0,.4);
   --radius:18px;
   --radius-sm:12px;
@@ -41,7 +41,7 @@ a{color:inherit;text-decoration:none}
 .header__gold-line{height:3px;background:linear-gradient(90deg,var(--gold),var(--gold-2));}
 .header__inner{display:flex;align-items:center;justify-content:space-between;height:70px}
 .brand{display:flex;align-items:center;gap:12px}
-.brand__logo{width:80px;height:auto;filter:grayscale(20%) contrast(110%)}
+.brand__logo{width:32px;height:auto;filter:grayscale(20%) contrast(110%)}
 .brand__text{font-weight:800;letter-spacing:.4px}
 
 .nav{position:relative}
@@ -104,7 +104,7 @@ a{color:inherit;text-decoration:none}
 .hero{position:relative;padding:120px 0 80px;border-top:0}
 .hero__bg{position:absolute;inset:0;overflow:hidden}
 .hero__bg img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:grayscale(20%) brightness(.6)}
-.hero__overlay{position:absolute;inset:0;background:radial-gradient(1200px 800px at 20% 20%,rgba(90, 95, 197, 0.15),transparent 55%),linear-gradient(180deg,rgba(15,19,27,.4),rgba(15,19,27,.85))}
+.hero__overlay{position:absolute;inset:0;background:radial-gradient(1200px 800px at 20% 20%,rgba(197,161,90,.15),transparent 55%),linear-gradient(180deg,rgba(15,19,27,.4),rgba(15,19,27,.85))}
 .hero__pattern{position:absolute;inset:0;background-image:linear-gradient(transparent 0 98%, rgba(255,255,255,.04) 99%), linear-gradient(90deg, transparent 0 98%, rgba(255,255,255,.04) 99%);background-size:40px 40px;mask-image:linear-gradient(180deg,transparent 0, #000 20%, #000 80%, transparent 100%)}
 .hero__content{position:relative;display:grid;grid-template-columns:1.2fr .8fr;gap:40px}
 .hero__copy .hero__ctas{display:flex;gap:14px;margin:20px 0}

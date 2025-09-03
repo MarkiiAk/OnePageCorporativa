@@ -13,6 +13,8 @@
   <!-- Fuente & Icons -->
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@400&display=swap" rel="stylesheet">
+
 
   <!-- jQuery -->
   <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
@@ -47,7 +49,13 @@
   <!-- Hero -->
   <section id="inicio" class="section hero">
     <div class="hero__bg">
-      <img src="assets/img/hero/edificio-nocturno.jpg" alt="" aria-hidden="true">
+      <img
+        src="assets/img/hero/edificio-nocturno.jpg"
+        data-src-dark="assets/img/hero/edificio-nocturno.jpg"
+        data-src-light="assets/img/hero/edificio-dia.jpg"
+        alt=""
+        aria-hidden="true"
+        class="hero-img">
       <div class="hero__overlay"></div>
       <div class="hero__pattern" aria-hidden="true"></div>
     </div>
@@ -349,9 +357,16 @@
   <footer class="footer">
     <div class="container footer__inner">
       <p>© <span id="year"></span> ABC Inmobiliaria. Todos los derechos reservados.</p>
-      <a href="#inicio" class="backtotop" aria-label="Volver arriba">↑</a>
     </div>
   </footer>
+
+  <a href="#inicio" class="toTopFab" aria-label="Volver arriba" title="Volver arriba">
+    <span class="material-symbols-outlined" aria-hidden="true">arrow_upward</span>
+  </a>
+
+  <a href="#" class="themeFab" aria-label="Cambiar tema" title="Cambiar tema">
+    <span class="material-symbols-outlined" aria-hidden="true">dark_mode</span>
+  </a>
 
   <script src="assets/js/app.js"></script>
 </body>

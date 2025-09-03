@@ -9,37 +9,40 @@
   <meta property="og:description" content="Desarrollos, venta y renta de inmuebles con respaldo corporativo." />
   <meta property="og:type" content="website" />
   <meta name="theme-color" content="#0f131b" />
+  <link rel="icon" href="assets/img/icon.ico">
+
 
   <!-- Fuente & Icons -->
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@400&display=swap" rel="stylesheet">
-
+  <script defer src="assets/js/bindings.js"></script>
 
   <!-- jQuery -->
   <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 </head>
 <body>
+
   <!-- Header -->
   <header id="site-header" class="header">
     <div class="container header__inner">
-      <a href="#inicio" class="brand" aria-label="Ir a inicio">
-        <img src="assets/img/logo-abc.png" alt="ABC Inmobiliaria" class="brand__logo" />
-        <span class="brand__text">ABC Inmobiliaria</span>
+      <a href="#nav1" class="brand" aria-label="Ir a inicio">
+        <img src="assets/img/logo-header.png" alt="ABC Inmobiliaria" class="brand__logo" />
+        <span class="brand__text" data-text="brand">brand</span>
       </a>
       <button class="nav__toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Abrir menú">
         <span class="nav__bar"></span><span class="nav__bar"></span><span class="nav__bar"></span>
       </button>
       <nav id="primary-nav" class="nav" role="navigation">
         <ul class="nav__list">
-          <li><a href="#inicio" class="nav__link">Inicio</a></li>
-          <li><a href="#nosotros" class="nav__link">Nosotros</a></li>
-          <li><a href="#proyectos" class="nav__link">Proyectos</a></li>
-          <li><a href="#servicios" class="nav__link">Servicios</a></li>
-          <li><a href="#confianza" class="nav__link">Confianza</a></li>
-          <li><a href="#trayectoria" class="nav__link">Trayectoria</a></li>
-          <li><a href="#testimonios" class="nav__link">Testimonios</a></li>
-          <li><a href="#contacto" class="nav__link nav__cta">Contacto</a></li>
+          <li><a href="#nav1" class="nav__link" data-text="nav.nav1">nav1</a></li>
+          <li><a href="#nav2" class="nav__link" data-text="nav.nav2">nav2</a></li>
+          <li><a href="#nav3" class="nav__link" data-text="nav.nav3">nav3</a></li>
+          <li><a href="#nav4" class="nav__link" data-text="nav.nav4">nav4</a></li>
+          <li><a href="#nav5" class="nav__link" data-text="nav.nav5">nav5</a></li>
+          <li><a href="#nav6" class="nav__link" data-text="nav.nav6">nav6</a></li>
+          <li><a href="#nav7" class="nav__link" data-text="nav.nav7">nav7</a></li>
+          <li><a href="#nav8" class="nav__link nav__cta" data-text="nav.nav8">nav8</a></li>
         </ul>
       </nav>
     </div>
@@ -47,12 +50,12 @@
   </header>
 
   <!-- Hero -->
-  <section id="inicio" class="section hero">
+  <section id="nav1" class="section hero">
     <div class="hero__bg">
       <img
-        src="assets/img/hero/edificio-nocturno.jpg"
-        data-src-dark="assets/img/hero/edificio-nocturno.jpg"
-        data-src-light="assets/img/hero/edificio-dia.jpg"
+        src="assets/img/hero/heroDark.jpg"
+        data-src-dark="assets/img/hero/heroDark.jpg"
+        data-src-light="assets/img/hero/heroLight.jpg"
         alt=""
         aria-hidden="true"
         class="hero-img">
@@ -61,53 +64,53 @@
     </div>
     <div class="container hero__content">
       <div class="hero__copy">
-        <h1 class="h1">Solidez inmobiliaria para tu patrimonio</h1>
-        <p class="lead">Venta, renta y desarrollo con procesos transparentes y respaldo corporativo. Decisiones serias, resultados medibles.</p>
+        <h1 class="h1" data-text="hero.title">heroTitle</h1>
+        <p class="lead" data-text="hero.subtitle">heroSubtitle</p>
         <div class="hero__ctas">
-          <a href="#proyectos" class="btn btn--gold">Explorar propiedades</a>
-          <a href="#contacto" class="btn btn--ghost">Agendar una cita</a>
+          <a href="#nav3" class="btn btn--gold" data-text="hero.cta1">cta1</a>
+          <a href="#nav8" class="btn btn--ghost" data-text="hero.cta2">cta2</a>
         </div>
         <ul class="hero__badges">
-          <li>+<span class="kpi" data-count="250">0</span> operaciones</li>
-          <li><span class="kpi" data-count="14">0</span> años de experiencia</li>
-          <li><span class="kpi" data-count="98">0</span>% satisfacción</li>
+          <li>+<span class="kpi" data-count="250">0</span> <span data-text="hero.badge1">badge1</span></li>
+          <li><span class="kpi" data-count="14">0</span> <span data-text="hero.badge2">badge2</span></li>
+          <li><span class="kpi" data-count="98">0</span>% <span data-text="hero.badge3">badge3</span></li>
         </ul>
       </div>
       <aside class="hero__card">
-        <h3>Propiedad destacada</h3>
-        <p class="hero__property-title">Torre Nova — Corporativo AAA</p>
+        <h3 data-text="hero.highlightTitle">heroHighlightTitle</h3>
+        <p class="hero__property-title" data-text="hero.highlightSubtitle">heroHighlightSubtitle</p>
         <ul class="hero__property-meta">
-          <li>Ubicación: Santa Fe</li>
-          <li>Espacios: 180–1,200 m²</li>
-          <li>Disponibilidad: Inmediata</li>
+          <li data-text="hero.highlightMeta1">heroHighlightMeta1</li>
+          <li data-text="hero.highlightMeta2">heroHighlightMeta2</li>
+          <li data-text="hero.highlightMeta3">heroHighlightMeta3</li>
         </ul>
-        <a href="#proyectos" class="link link--gold">Mas propiedades</a>
+        <a href="#nav3" class="link link--gold" data-text="hero.highlightLink">heroHighlightLink</a>
       </aside>
     </div>
   </section>
 
   <!-- Nosotros -->
-  <section id="nosotros" class="section section--surface">
+  <section id="nav2" class="section section--surface">
     <div class="container grid grid--2">
       <div class="reveal">
-        <h2 class="h2">Quiénes somos</h2>
-        <p>En ABC Inmobiliaria operamos bajo estándares corporativos para proteger el valor de tu inversión. Integramos análisis de mercado, due diligence legal y negociación estratégica.</p>
+        <h2 class="h2" data-text="about.title">aboutTitle</h2>
+        <p data-text="about.text">aboutText</p>
         <ul class="list list--check">
-          <li>Gobierno corporativo y compliance.</li>
-          <li>Modelo de evaluación 360° (financiero, legal, técnico).</li>
-          <li>Red de aliados: notarías, valuadores y desarrolladores.</li>
+          <li data-text="about.list1">aboutList1</li>
+          <li data-text="about.list2">aboutList2</li>
+          <li data-text="about.list3">aboutList3</li>
         </ul>
       </div>
       <div class="reveal">
         <div class="card card--outline">
-          <h3>Misión</h3>
-          <p>Crear valor inmobiliario sostenible a través de procesos transparentes.</p>
-          <h3>Visión</h3>
-          <p>Ser el referente en operaciones seguras y eficientes en México.</p>
+          <h3 data-text="about.missionTitle">aboutMissionTitle</h3>
+          <p data-text="about.missionText">aboutMissionText</p>
+          <h3 data-text="about.visionTitle">aboutVisionTitle</h3>
+          <p data-text="about.visionText">aboutVisionText</p>
           <div class="logos">
-            <img src="assets/img/cert/ampi.png" alt="AMPI" />
-            <img src="assets/img/cert/iso27001.png" alt="ISO 27001" />
-            <img src="assets/img/cert/iso9001.png" alt="ISO 9001" />
+            <img src="assets/img/cert/cert1.png" alt="AMPI" />
+            <img src="assets/img/cert/cer2.png" alt="ISO 27001" />
+            <img src="assets/img/cert/cert3.png" alt="ISO 9001" />
           </div>
         </div>
       </div>
@@ -115,95 +118,101 @@
   </section>
 
   <!-- Proyectos / Propiedades -->
-  <section id="proyectos" class="section">
+  <section id="nav3" class="section">
     <div class="container">
       <div class="section__head">
-        <h2 class="h2">Portafolio</h2>
+        <h2 class="h2" data-text="portfolio.title">portfolioTitle</h2>
+
         <div class="filters" role="tablist" aria-label="Filtros de propiedades">
-          <button class="filter is-active" data-filter="all" role="tab" aria-selected="true">Todo</button>
-          <button class="filter" data-filter="venta" role="tab" aria-selected="false">Venta</button>
-          <button class="filter" data-filter="renta" role="tab" aria-selected="false">Renta</button>
-          <button class="filter" data-filter="desarrollo" role="tab" aria-selected="false">Desarrollo</button>
+          <button class="filter is-active" data-filter="all" role="tab" aria-selected="true" data-text="portfolio.filter1">filterAll</button>
+          <button class="filter" data-filter="venta" role="tab" aria-selected="false" data-text="portfolio.filter2">filterVenta</button>
+          <button class="filter" data-filter="renta" role="tab" aria-selected="false" data-text="portfolio.filter3">filterRenta</button>
+          <button class="filter" data-filter="desarrollo" role="tab" aria-selected="false" data-text="portfolio.filter4">filterDesarrollo</button>
         </div>
       </div>
 
       <div class="grid grid--3 properties">
-        <!-- Card -->
+        <!-- Card 1 -->
         <article class="prop reveal" data-type="venta">
           <div class="prop__media">
-            <img src="assets/img/properties/residencial-aurum.jpg" alt="Residencial Aurum" />
-            <span class="badge badge--venta">Venta</span>
+            <img src="assets/img/cards/card1.jpg" alt="" data-text="portfolio.card1Alt">portfolioCard1Alt
+            <span class="badge badge--venta" data-text="portfolio.card1Badge">card1Badge</span>
           </div>
           <div class="prop__body">
-            <h3 class="prop__title">Residencial Aurum</h3>
-            <p class="prop__meta">Bosques de las Lomas · 420 m² · 3 rec · 3.5 baños</p>
-            <p class="prop__price">$22,900,000 MXN</p>
-            <a href="#contacto" class="link">Solicitar Detalles</a>
+            <h3 class="prop__title" data-text="portfolio.card1Title">card1Title</h3>
+            <p class="prop__meta" data-text="portfolio.card1Meta">card1Meta</p>
+            <p class="prop__price" data-text="portfolio.card1Price">card1Price</p>
+            <a href="#nav8" class="link" data-text="portfolio.card1Cta">card1Cta</a>
           </div>
         </article>
 
+        <!-- Card 2 -->
         <article class="prop reveal" data-type="renta">
           <div class="prop__media">
-            <img src="assets/img/properties/corporativo-nova.jpg" alt="Corporativo Nova" />
-            <span class="badge badge--renta">Renta</span>
+            <img src="assets/img/cards/card2.jpg" alt="" data-text="portfolio.card2Alt">card2Alt
+            <span class="badge badge--renta" data-text="portfolio.card2Badge">card2Badge</span>
           </div>
           <div class="prop__body">
-            <h3 class="prop__title">Corporativo Nova</h3>
-            <p class="prop__meta">Santa Fe · 180–1,200 m² · Shell & Core</p>
-            <p class="prop__price">Desde $420/m²</p>
-            <a href="#contacto" class="link">Solicitar Detalles</a>
+            <h3 class="prop__title" data-text="portfolio.card2Title">card2Title</h3>
+            <p class="prop__meta" data-text="portfolio.card2Meta">card2Meta</p>
+            <p class="prop__price" data-text="portfolio.card2Price">card2Price</p>
+            <a href="#nav8" class="link" data-text="portfolio.card2Cta">card2Cta</a>
           </div>
         </article>
 
+        <!-- Card 3 -->
         <article class="prop reveal" data-type="desarrollo">
           <div class="prop__media">
-            <img src="assets/img/properties/altavista-park.jpg" alt="Altavista Park" />
-            <span class="badge badge--desarrollo">Desarrollo</span>
+            <img src="assets/img/cards/card3.jpg" alt="" data-text="portfolio.card3Alt">card3Alt
+            <span class="badge badge--desarrollo" data-text="portfolio.card3Badge">card3Badge</span>
           </div>
           <div class="prop__body">
-            <h3 class="prop__title">Altavista Park</h3>
-            <p class="prop__meta">Cumbres · Lotes residenciales · Etapa 2</p>
-            <p class="prop__price">Preventas</p>
-            <a href="#contacto" class="link">Solicitar Detalles</a>
+            <h3 class="prop__title" data-text="portfolio.card3Title">card3Title</h3>
+            <p class="prop__meta" data-text="portfolio.card3Meta">card3Meta</p>
+            <p class="prop__price" data-text="portfolio.card3Price">card3Price</p>
+            <a href="#nav8" class="link" data-text="portfolio.card3Cta">card3Cta</a>
           </div>
         </article>
 
+        <!-- Card 4 -->
         <article class="prop reveal" data-type="venta">
           <div class="prop__media">
-            <img src="assets/img/properties/skyline-vip.jpg" alt="Skyline VIP" />
-            <span class="badge badge--venta">Venta</span>
+            <img src="assets/img/cards/card4.jpg" alt="" data-text="portfolio.card4Alt">card4Alt
+            <span class="badge badge--venta" data-text="portfolio.card4Badge">card4Badge</span>
           </div>
           <div class="prop__body">
-            <h3 class="prop__title">Skyline VIP</h3>
-            <p class="prop__meta">Polanco · PH 310 m² · Terraza</p>
-            <p class="prop__price">$28,500,000 MXN</p>
-            <a href="#contacto" class="link">Solicitar Detalles</a>
+            <h3 class="prop__title" data-text="portfolio.card4Title">card4Title</h3>
+            <p class="prop__meta" data-text="portfolio.card4Meta">card4Meta</p>
+            <p class="prop__price" data-text="portfolio.card4Price">card4Price</p>
+            <a href="#nav8" class="link" data-text="portfolio.card4Cta">card4Cta</a>
           </div>
         </article>
 
+        <!-- Card 5 -->
         <article class="prop reveal" data-type="renta">
           <div class="prop__media">
-            <img src="assets/img/properties/loft-urbano.jpg" alt="Loft Urbano" />
-            <span class="badge badge--renta">Renta</span>
+            <img src="assets/img/cards/card5.jpg" alt="" data-text="portfolio.card5Alt">card5Alt
+            <span class="badge badge--renta" data-text="portfolio.card5Badge">card5Badge</span>
           </div>
           <div class="prop__body">
-            <h3 class="prop__title">Loft Urbano</h3>
-            <p class="prop__meta">Roma Norte · 78 m² · Amueblado</p>
-            <p class="prop__price">$28,900 MXN/mes</p>
-            <a href="#contacto" class="link">Solicitar Detalles</a>
+            <h3 class="prop__title" data-text="portfolio.card5Title">card5Title</h3>
+            <p class="prop__meta" data-text="portfolio.card5Meta">card5Meta</p>
+            <p class="prop__price" data-text="portfolio.card5Price">card5Price</p>
+            <a href="#nav8" class="link" data-text="portfolio.card5Cta">card5Cta</a>
           </div>
         </article>
 
+        <!-- Card 6 -->
         <article class="prop reveal" data-type="desarrollo">
           <div class="prop__media">
-            <img src="assets/img/properties/lomas-verdes.jpg" alt="Lomas Verdes Residencial" />
-            <span class="badge badge--desarrollo">Desarrollo</span>
+            <img src="assets/img/cards/card6.jpg" alt="" data-text="portfolio.card6Alt">card6Alt
+            <span class="badge badge--desarrollo" data-text="portfolio.card6Badge">card6Badge</span>
           </div>
           <div class="prop__body">
-            <h3 class="prop__title">Lomas Verdes Residencial</h3>
-            <p class="prop__meta">Naucalpan · 2 y 3 rec · Amenidades</p>
-            <p class="prop__price">Entrega Q4</p>
-            <a href="#contacto" class="link">Solicitar Detalles</a>
+            <h3 class="prop__title" data-text="portfolio.card6Title">card6Title</h3>
+            <p class="prop__meta" data-text="portfolio.card6Meta">card6Meta</p>
+            <p class="prop__price" data-text="portfolio.card6Price">card6Price</p>
+            <a href="#nav8" class="link" data-text="portfolio.card6Cta">card6Cta</a>
           </div>
         </article>
       </div>
@@ -211,44 +220,44 @@
   </section>
 
   <!-- Servicios -->
-  <section id="servicios" class="section section--surface">
+  <section id="nav4" class="section section--surface">
     <div class="container">
-      <h2 class="h2 reveal">Servicios</h2>
+      <h2 class="h2 reveal" data-text="services.title">servicesTitle</h2>
       <div class="grid grid--3">
         <div class="card card--service reveal">
-          <h3>Venta / Renta</h3>
-          <p>Colocación de inmuebles residenciales y corporativos con inteligencia de mercado.</p>
+          <h3 data-text="services.card1Title">card1Title</h3>
+          <p data-text="services.card1Text">card1Text</p>
         </div>
         <div class="card card--service reveal">
-          <h3>Desarrollos</h3>
-          <p>Estructuración, preventa y acompañamiento integral de proyectos.</p>
+          <h3 data-text="services.card2Title">card2Title</h3>
+          <p data-text="services.card2Text">card2Text</p>
         </div>
         <div class="card card--service reveal">
-          <h3>Administración</h3>
-          <p>Gestión de arrendamientos, cobranzas y mantenimiento con KPIs.</p>
+          <h3 data-text="services.card3Title">card3Title</h3>
+          <p data-text="services.card3Text">card3Text</p>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Confianza -->
-  <section id="confianza" class="section">
+  <section id="nav5" class="section">
     <div class="container grid grid--2">
       <div class="reveal">
-        <h2 class="h2">Por qué confiar en ABC</h2>
+        <h2 class="h2" data-text="trust.title">trustTitle</h2>
         <ul class="list list--bullet">
-          <li>Due diligence legal y fiscal previo a publicación.</li>
-          <li>Contratos estandarizados y trazabilidad documental.</li>
-          <li>Comunicaciones claras, sin letra chica.</li>
+          <li data-text="trust.list1">list1</li>
+          <li data-text="trust.list2">list2</li>
+          <li data-text="trust.list3">list3</li>
         </ul>
       </div>
       <div class="reveal">
         <div class="card card--outline">
-          <h3>Indicadores clave</h3>
+          <h3 data-text="trust.indicatorsTitle">indicatorsTitle</h3>
           <ul class="kpi-list">
-            <li><span class="kpi" data-count="35">0</span> días promedio de colocación</li>
-            <li><span class="kpi" data-count="92">0</span>% operaciones en primera visita</li>
-            <li><span class="kpi" data-count="100">0</span>% contratos con garantías</li>
+            <li><span class="kpi" data-count="35">0</span> <span data-text="trust.kpi1">kpi1</span></li>
+            <li><span class="kpi" data-count="92">0</span> <span data-text="trust.kpi2">kpi2</span></li>
+            <li><span class="kpi" data-count="100">0</span> <span data-text="trust.kpi3">kpi3</span></li>
           </ul>
         </div>
       </div>
@@ -256,36 +265,36 @@
   </section>
 
   <!-- Trayectoria -->
-  <section id="trayectoria" class="section section--surface">
+  <section id="nav6" class="section section--surface">
     <div class="container">
-      <h2 class="h2 reveal">Trayectoria</h2>
+      <h2 class="h2 reveal" data-text="trajectory.title">trajectoryTitle</h2>
       <div class="timeline">
         <div class="tl__item reveal">
           <span class="tl__dot"></span>
           <div class="tl__content">
-            <h3>2011</h3>
-            <p>Nace ABC con foco en residencial premium.</p>
+            <h3 data-text="trajectory.event1Year">event1Year</h3>
+            <p data-text="trajectory.event1Text">event1Text</p>
           </div>
         </div>
         <div class="tl__item reveal">
           <span class="tl__dot"></span>
           <div class="tl__content">
-            <h3>2016</h3>
-            <p>Expansión a corporativo y parques industriales.</p>
+            <h3 data-text="trajectory.event2Year">event2Year</h3>
+            <p data-text="trajectory.event2Text">event2Text</p>
           </div>
         </div>
         <div class="tl__item reveal">
           <span class="tl__dot"></span>
           <div class="tl__content">
-            <h3>2022</h3>
-            <p>Implementación de gobierno corporativo y certificaciones.</p>
+            <h3 data-text="trajectory.event3Year">event3Year</h3>
+            <p data-text="trajectory.event3Text">event3Text</p>
           </div>
         </div>
         <div class="tl__item reveal">
           <span class="tl__dot"></span>
           <div class="tl__content">
-            <h3>2025</h3>
-            <p>Portafolio activo en 7 ciudades.</p>
+            <h3 data-text="trajectory.event4Year">event4Year</h3>
+            <p data-text="trajectory.event4Text">event4Text</p>
           </div>
         </div>
       </div>
@@ -293,23 +302,23 @@
   </section>
 
   <!-- Testimonios -->
-  <section id="testimonios" class="section">
+  <section id="nav7" class="section">
     <div class="container">
-      <h2 class="h2 reveal">Testimonios</h2>
+      <h2 class="h2 reveal" data-text="testimonials.title">testimonialsTitle</h2>
       <div class="carousel" aria-roledescription="carousel">
         <button class="carousel__btn prev" aria-label="Anterior">‹</button>
         <div class="carousel__track">
           <figure class="testimonial reveal">
-            <blockquote>“Operación impecable. La documentación y la negociación fueron claras desde el día uno.”</blockquote>
-            <figcaption>— M. Hernández, Inversionista</figcaption>
+            <blockquote data-text="testimonials.quote1">quote1</blockquote>
+            <figcaption data-text="testimonials.author1">author1</figcaption>
           </figure>
           <figure class="testimonial reveal">
-            <blockquote>“Lograron rentar el corporativo en 18 días con un inquilino sólido.”</blockquote>
-            <figcaption>— M. López, Propietaria</figcaption>
+            <blockquote data-text="testimonials.quote2">quote2</blockquote>
+            <figcaption data-text="testimonials.author2">author2</figcaption>
           </figure>
           <figure class="testimonial reveal">
-            <blockquote>“Nos acompañaron en el due diligence del desarrollo. Cero sorpresas.”</blockquote>
-            <figcaption>— Grupo Avance, Desarrollador</figcaption>
+            <blockquote data-text="testimonials.quote3">quote3</blockquote>
+            <figcaption data-text="testimonials.author3">author3</figcaption>
           </figure>
         </div>
         <button class="carousel__btn next" aria-label="Siguiente">›</button>
@@ -318,15 +327,15 @@
   </section>
 
   <!-- Contacto -->
-  <section id="contacto" class="section section--surface">
+  <section id="nav8" class="section section--surface">
     <div class="container grid grid--2">
       <div class="reveal">
-        <h2 class="h2">Contacto</h2>
-        <p>Agenda una cita con nuestro equipo. Respuesta en menos de 24 horas hábiles.</p>
+        <h2 class="h2" data-text="contact.title">contactTitle</h2>
+        <p data-text="contact.text">contactText</p>
         <ul class="contact">
-          <li><strong>Tel:</strong> <a href="tel:+525512345678">+52 55 1234 5678</a></li>
-          <li><strong>Email:</strong> <a href="mailto:contacto@abc.mx">contacto@abc.mx</a></li>
-          <li><strong>Oficinas:</strong> Av. Empresa 100, CDMX</li>
+          <li><strong data-text="contact.phoneLabel">phoneLabel</strong> <a href="tel:+525512345678" data-text="contact.phone">phone</a></li>
+          <li><strong data-text="contact.emailLabel">emailLabel</strong> <a href="mailto:contacto@abc.mx" data-text="contact.email">email</a></li>
+          <li><strong data-text="contact.officeLabel">officeLabel</strong> <span data-text="contact.office">office</span></li>
         </ul>
         <div class="map">
           <iframe title="Mapa oficinas ABC" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
@@ -336,19 +345,19 @@
       <div class="reveal">
         <form class="form" action="mailto:contacto@abc.mx" method="post" enctype="text/plain">
           <div class="form__row">
-            <label for="name">Nombre</label>
+            <label for="name" data-text="contact.formName">formName</label>
             <input id="name" name="Nombre" type="text" required />
           </div>
           <div class="form__row">
-            <label for="email">Email</label>
+            <label for="email" data-text="contact.formEmail">formEmail</label>
             <input id="email" name="Email" type="email" required />
           </div>
           <div class="form__row">
-            <label for="msg">Mensaje</label>
+            <label for="msg" data-text="contact.formMsg">formMsg</label>
             <textarea id="msg" name="Mensaje" rows="5" required></textarea>
           </div>
-          <button class="btn btn--gold" type="submit">Enviar</button>
-          <p class="form__note">También puedes escribir directo a <a href="mailto:contacto@abc.mx">contacto@abc.mx</a></p>
+          <button class="btn btn--gold" type="submit" data-text="contact.formBtn">formBtn</button>
+          <p class="form__note" data-text="contact.formNote">formNote</p>
         </form>
       </div>
     </div>
@@ -356,7 +365,7 @@
 
   <footer class="footer">
     <div class="container footer__inner">
-      <p>© <span id="year"></span> ABC Inmobiliaria. Todos los derechos reservados.</p>
+      <p data-text="footer.text"></p>
     </div>
   </footer>
 

@@ -1,5 +1,4 @@
 // Año en footer
-document.getElementById('year').textContent = new Date().getFullYear();
 
 /* ====================== */
 /*  ADDED: Empuje de body */
